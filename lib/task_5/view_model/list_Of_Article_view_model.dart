@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import '../FetchApi/DataCardFromApi.dart';
-import '../FetchApi/FetchApi.dart';
+
+import '../fetch_data/DataCardFromApi.dart';
+import '../fetch_data/FetchApi.dart';
+
 
 
 

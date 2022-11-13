@@ -1,6 +1,6 @@
+import 'package:animationtasks/task_5/constant_var/ConstantVariable.dart';
 import 'package:flutter/material.dart';
 
-import '../Constant/ConstantVariable.dart';
 
 class CategoricalBar extends StatefulWidget {
   final int? index;

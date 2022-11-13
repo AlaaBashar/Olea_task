@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../FetchApi/DataCardFromApi.dart';
+import '../fetch_data/DataCardFromApi.dart';
+
 
 class MoreDetailsPage extends StatefulWidget {
   final Articles? model;

@@ -1,12 +1,9 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
-
-
-import '../AllWidgetOnNewsApp/AllWidget.dart';
-import '../Constant/ConstantVariable.dart';
-import '../FetchApi/DataCardFromApi.dart';
-import '../FetchApi/FetchApi.dart';
+import '../constant_var/ConstantVariable.dart';
+import '../fetch_data/DataCardFromApi.dart';
+import '../fetch_data/FetchApi.dart';
+import '../shared_widget/AllWidget.dart';
 import 'MoreDetailsPage.dart';
 
 List<Articles>? listModel;
@@ -245,70 +242,3 @@ class CardScrollWidget extends StatelessWidget {
   }
 }
 
-// SingleChildScrollView(
-//   scrollDirection: Axis.horizontal,
-//   child: Container(
-//     child: Row(
-//       children: [
-//         CategoricalBar(
-//           selected:false,
-//           pathOfImage:
-//           ImageAndNameOFCategoricalBar.pathOfGeneralImage,
-//           nameOfCategorical:
-//           ImageAndNameOFCategoricalBar.nameOfGeneralImage,
-//         ),
-//         CategoricalBar(
-//           pathOfImage:
-//           ImageAndNameOFCategoricalBar.pathOfEventImage,
-//           nameOfCategorical:
-//           ImageAndNameOFCategoricalBar.nameOfEventImage,
-//         ),
-//         CategoricalBar(
-//           pathOfImage:
-//           ImageAndNameOFCategoricalBar.pathOfTheatersImage,
-//           nameOfCategorical: ImageAndNameOFCategoricalBar
-//               .nameOfExhibitionImage,
-//         ),
-//         CategoricalBar(
-//           pathOfImage: ImageAndNameOFCategoricalBar
-//               .pathOfExhibitionImage,
-//           nameOfCategorical:
-//           ImageAndNameOFCategoricalBar.nameOfTheatersImage,
-//         ),
-//         CategoricalBar(
-//           pathOfImage:
-//           ImageAndNameOFCategoricalBar.pathOfPoliticalImage,
-//           nameOfCategorical:
-//           ImageAndNameOFCategoricalBar.nameOfPoliticalImage,
-//         ),
-//
-//
-//       ],
-//     ),
-//   ),
-// ),
-//     listModel != null ? InkWell(
-//   onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (_) => MoreDetailsPage(model: model))),
-//   child: Container(
-//     child: Column(
-//       children: <Widget>[
-//         Stack(
-//           children: <Widget>[
-//             CardScrollWidget(currentPage),
-//             Positioned.fill(
-//               child: PageView.builder(
-//                 itemCount: listModel.length,
-//                 controller: controller,
-//                 reverse: true,
-//                 itemBuilder: (context, index) {
-//                   return Container();
-//                 },
-//               ),
-//             )
-//           ],
-//         ),
-//       ],
-//     ),
-//   ),
-// )
-// :Center(child:Text("Loading Data ...")),

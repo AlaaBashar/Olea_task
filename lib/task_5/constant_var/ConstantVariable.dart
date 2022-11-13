@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../AllWidgetOnNewsApp/AllWidget.dart';
+
+import '../shared_widget/AllWidget.dart';
 
 
 
@@ -27,11 +28,11 @@ class ImageAndNameOFCategoricalBar{
 }
 //---------------------------------------------------------------
 List<CategoricalBar> nameAndImageOfCategoricalBar=[
-  CategoricalBar(nameOfCategorical: 'General' ,pathOfImage:"assets/images/general.png",),
-  CategoricalBar(nameOfCategorical: 'Event' ,pathOfImage:"assets/images/Event .png",),
-  CategoricalBar(nameOfCategorical: 'Exhibition',pathOfImage:"assets/images/Exhibition.png",),
-  CategoricalBar(nameOfCategorical: 'Theaters' ,pathOfImage:"assets/images/Theaters.png",),
-  CategoricalBar(nameOfCategorical: 'Political' ,pathOfImage:"assets/images/Political.jpg",),
+  const CategoricalBar(nameOfCategorical: 'General' ,pathOfImage:"assets/images/general.png",),
+  const CategoricalBar(nameOfCategorical: 'Event' ,pathOfImage:"assets/images/Event .png",),
+  const CategoricalBar(nameOfCategorical: 'Exhibition',pathOfImage:"assets/images/Exhibition.png",),
+  const CategoricalBar(nameOfCategorical: 'Theaters' ,pathOfImage:"assets/images/Theaters.png",),
+  const CategoricalBar(nameOfCategorical: 'Political' ,pathOfImage:"assets/images/Political.jpg",),
 ];
 
 List<String> images = [
